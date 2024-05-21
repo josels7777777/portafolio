@@ -12,6 +12,20 @@ h1 {
     font-size: 40px;
     clear: both;
 }
+    .typing-animation {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        animation: typing 5s steps(40, end);
+    }
+    @keyframes typing {
+        from {
+            width: 0; 
+        }
+        to {
+            width: 100%; 
+        }
+    }
 h2 {
     text-decoration: underline;
     font-size: 30px;
@@ -109,7 +123,7 @@ h3 {
         flex: 10;
         line-height: 1.5;
     }
-    .photo{
+    #photo{
         border: 3px solid wheat;
         margin: 25px 0px 0px 50px;
     }
